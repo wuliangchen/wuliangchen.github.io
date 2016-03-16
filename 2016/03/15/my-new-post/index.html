@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>wuliangchen&#39;s blog</title>
+  <title>Hexo的搭建(hexo 3.0) | wuliangchen blog</title>
   <meta name="author" content="wuliangchen">
   
-  <meta name="description" content="Walk steps step by step">
+  <meta name="description" content="Goals determine what you are going to be">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-  <meta property="og:site_name" content="wuliangchen&#39;s blog"/>
+  <meta property="og:title" content="Hexo的搭建(hexo 3.0)"/>
+  <meta property="og:site_name" content="wuliangchen blog"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="wuliangchen&#39;s blog" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="wuliangchen blog" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
@@ -31,14 +31,16 @@
   <header id="header" class="inner"><div class= "header-content">
 	<div class = "alignleft col-one">
 		
-			<img src = "/img/avatar/avatar.jpg">
+			<img src = "/img/avatar.jpg">
 		
 		<div class="header-div">
-		    <h1><a href="/">wuliangchen&#39;s blog</a></h1>
-		    <h2><a href="/">谢谢你的喜欢</a></h2>
+		    <h1><a href="/">wuliangchen blog</a></h1>
+		    <h2><a href="/">Goals determine what you are going to be</a></h2>
 		</div>
 	</div>
 	<div class = "alignright col-two">
+		
+			<img src = "/img/hello.jpg">
 		
 	</div>
 	<div class="clearfix"></div>
@@ -74,10 +76,10 @@
     <header>
         <div class="icon"></div>
         
-        <time datetime="2016-02-22T07:02:58.259Z"><a href="/2016/02/22/my-new-post/">2016年02月22日</a></time>
+        <time datetime="2016-03-15T09:22:03.158Z"><a href="/2016/03/15/my-new-post/">2016-03-15</a></time>
         
   
-    <h1 class="title"></h1>
+    <h1 class="title">Hexo的搭建(hexo 3.0)</h1>
   
 
     </header>
@@ -91,7 +93,7 @@
       
         <h1 id="Hexo的搭建-hexo-3-0"><a href="#Hexo的搭建-hexo-3-0" class="headerlink" title=" Hexo的搭建(hexo 3.0) "></a><strong> Hexo的搭建(hexo 3.0) </strong></h1><h3 id="初衷"><a href="#初衷" class="headerlink" title=" 初衷 "></a><strong> 初衷 </strong></h3><p>这几天，准备搭建一个自己的博客，看到hexo的强大搭建博客能力和容易上手，用hexo搭建了自己的博客，看到网上使用hexo搭建博客的教程很多，我自己也是跟着各位大神的教程搭建的博客，写这篇博客是为了记录下我在搭建的过程中遇到的问题和个人学习笔记。</p>
 <h3 id="安装Git"><a href="#安装Git" class="headerlink" title=" 安装Git "></a><strong> 安装Git </strong></h3><p>下载安装<a href="https://git-for-windows.github.io/" target="_blank" rel="external">msysgit</a></p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title=" 安装Node.js "></a><strong> 安装Node.js </strong></h3><p>在 Windows 环境下安装 Node.js ，下载<a href="http://nodejs.cn/" target="_blank" rel="external">Node.js</a>文件安装即可，结果后面使用命令安装hexo的时候，提示无效的命令，可以重启下机器。</p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title=" 安装Node.js "></a><strong> 安装Node.js </strong></h3><p>在 Windows 环境下安装 Node.js ，下载<a href="http://nodejs.cn/" target="_blank" rel="external">Node.js</a>文件安装即可，如果后面使用命令安装hexo的时候，提示无效的命令，可以重启下机器。</p>
 <a id="more"></a>
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title=" 安装Hexo "></a><strong> 安装Hexo </strong></h3><p>先介绍几个hexo的命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#完整命令为hexo generate,用于生成静态文件</span></span><br><span class="line">$ hexo s <span class="comment">#完整命令为hexo server,用于启动服务器，主要用来本地预览</span></span><br><span class="line">$ hexo d <span class="comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span></span><br><span class="line">$ hexo n <span class="comment">#完整命令为hexo new,用于新建一篇文章</span></span><br></pre></td></tr></table></figure>
@@ -106,8 +108,8 @@
 <p>用浏览器访问<code><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></code>，就能看到本地的博客了，后面要开始部署到Github上面了。</p>
 <h3 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title=" 注册Github账号 "></a><strong> 注册Github账号 </strong></h3><p>已经有Github帐号跳过此步，进入<a href="https://github.com/" target="_blank" rel="external">Github</a>进行注册，用户名、邮箱和密码之后都需要用到，一定要记住。</p>
 <h3 id="创建repository"><a href="#创建repository" class="headerlink" title=" 创建repository "></a><strong> 创建repository </strong></h3><p>在自己<a href="https://github.com/" target="_blank" rel="external">Github</a>主页右下角，创建一个new repository。比如我的<a href="https://github.com/" target="_blank" rel="external">Github</a>账号是<code>wuliangchen</code>，那么我应该创建的repository名字应该是<code>wuliangchen.github.io</code>。</p>
-<p><img src="/img/avatar/1.png" alt="text"></p>
-<p><img src="/img/avatar/2.png" alt="text"></p>
+<p><img src="/img/1.png" alt="text"></p>
+<p><img src="/img/2.png" alt="text"></p>
 <h3 id="部署本地文件到github"><a href="#部署本地文件到github" class="headerlink" title=" 部署本地文件到github "></a><strong> 部署本地文件到github </strong></h3><p>Repository已经创建了，当然是先把博客放到<a href="https://github.com/" target="_blank" rel="external">Github</a>上去看看效果。编辑<code>F:\hexo</code>下的<code>_config.yml</code>文件,在<code>_config.yml</code>最下方，添加如下配置。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/wuliangchen/wuliangchen.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>配置好<code>_config.yml</code>，执行下面命令部署到Github上。如果你是第一次使用Github或者是已经使用过，但没有配置过SSH，则可能需要配置一下，具体方法<a href="http://blog.csdn.net/v123411739/article/details/44071059/" target="_blank" rel="external">史上最全github使用方法：github入门到精通</a>里面有介绍到。</p>
@@ -153,11 +155,11 @@
 
 
     <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="2016/02/22/my-new-post/" data-title="" data-url="http://yoursite.com/2016/02/22/my-new-post/"></div>
+<div class="ds-thread" data-thread-key="2016/03/15/my-new-post/" data-title="Hexo的搭建(hexo 3.0)" data-url="http://yoursite.com/2016/03/15/my-new-post/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"pengloo53"};
+var duoshuoQuery = {short_name:"wuliangchen"};
   (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
@@ -181,20 +183,35 @@ var duoshuoQuery = {short_name:"pengloo53"};
 
 
   
-  <div class="widget">
-    <h3 class="baidu_tuijian_title">猜你喜欢</h3>
-    <div id="hm_t_88638"></div>
-  </div>
-
 
   
   <div class="widget tag">
     <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">2016年02月</a><span class="archive-list-count">1</span></li></ul>
+	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">4</span></li></ul>
   </div>
 
 
-  
+  <div class="widget">
+  <h3 class="title">最新评论</h3>
+  	<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments ds-recent-user" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+	<!-- 多说最新评论 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"pengloo53"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
 
   
 </aside>
