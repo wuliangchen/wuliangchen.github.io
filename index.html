@@ -96,7 +96,7 @@
 							
 								<a class="github" target="_blank" href="https://github.com/wuliangchen" title="github">github</a>
 					        
-								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+								<a class="weibo" target="_blank" href="https://weibo.com/1716962207/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
 					        
 						</div>
 					</nav>
@@ -159,7 +159,7 @@
 					
 						<a class="github" target="_blank" href="https://github.com/wuliangchen" title="github">github</a>
 			        
-						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+						<a class="weibo" target="_blank" href="https://weibo.com/1716962207/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
 			        
 				</div>
 			</nav>
@@ -169,11 +169,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-yidong_web" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-xiaoguo" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/15/yidong_web/" class="article-date">
-  	<time datetime="2016-03-15T09:22:58.725Z" itemprop="datePublished">2016-03-15</time>
+      <a href="/2016/09/07/xiaoguo/" class="article-date">
+  	<time datetime="2016-09-07T08:23:42.863Z" itemprop="datePublished">2016-09-07</time>
 </a>
     </div>
   
@@ -186,7 +186,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/yidong_web/">移动web整理</a>
+      <a class="article-title" href="/2016/09/07/xiaoguo/">常用效果</a>
     </h1>
   
 
@@ -195,7 +195,64 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="移动web整理"><a href="#移动web整理" class="headerlink" title=" 移动web整理 "></a><strong> 移动web整理 </strong></h1><h2 id="手机端选择哪种Png"><a href="#手机端选择哪种Png" class="headerlink" title="手机端选择哪种Png"></a>手机端选择哪种Png</h2><p>png需要满足体积小和视觉效果良好，使用<code>Fireworks</code>导出的<code>[png8 alpha]</code>，在手机端的支持是比较好的~不仅文件小，节省流量，而且半透明效果良好</p>
+        <h3 id="里面元素滚动到底外部容器不滚动"><a href="#里面元素滚动到底外部容器不滚动" class="headerlink" title=" 里面元素滚动到底外部容器不滚动 "></a><strong> 里面元素滚动到底外部容器不滚动 </strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">CSS:</span><br><span class="line">.test &#123;</span><br><span class="line">    width: <span class="number">210</span>px;</span><br><span class="line">    height: <span class="number">200</span>px;</span><br><span class="line">    overflow: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">HTML代码：</span><br><span class="line">&lt;div id=<span class="string">"test"</span> class=<span class="string">"test"</span>&gt;</span><br><span class="line">    &lt;img src=<span class="string">"mm2.jpg"</span>&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">JS代码：</span><br><span class="line">$.fn.scrollUnique = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> $(this).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var eventType = <span class="string">'mousewheel'</span>;</span><br><span class="line">        <span class="keyword">if</span> (document.mozHidden !== undefined) &#123;</span><br><span class="line">            eventType = <span class="string">'DOMMouseScroll'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        $(this).on(eventType, <span class="keyword">function</span>(event) &#123;</span><br><span class="line">            // 一些数据</span><br><span class="line">            var scrollTop = this.scrollTop,</span><br><span class="line">                scrollHeight = this.scrollHeight,</span><br><span class="line">                height = this.clientHeight;</span><br><span class="line"></span><br><span class="line">            var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || <span class="number">0</span>);        </span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> ((delta &gt; <span class="number">0</span> &amp;&amp; scrollTop &lt;= delta) || (delta &lt; <span class="number">0</span> &amp;&amp; scrollHeight - height - scrollTop &lt;= -<span class="number">1</span> * delta)) &#123;</span><br><span class="line">                // IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位</span><br><span class="line">                this.scrollTop = delta &gt; <span class="number">0</span>? <span class="number">0</span>: scrollHeight;</span><br><span class="line">                // 向上滚 || 向下滚</span><br><span class="line">                event.preventDefault();</span><br><span class="line">            &#125;        </span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);	</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">$(<span class="string">'#test'</span>).scrollUnique();</span><br></pre></td></tr></table></figure>
+<h3 id="滚动到底部自动加载"><a href="#滚动到底部自动加载" class="headerlink" title=" 滚动到底部自动加载 "></a><strong> 滚动到底部自动加载 </strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">JS代码：</span><br><span class="line">/*滚动加载*/</span><br><span class="line">$(window).scroll(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    var scrollTop = $(this).scrollTop();</span><br><span class="line">    var scrollHeight = $(document).height();</span><br><span class="line">    var windowHeight = $(this).height();</span><br><span class="line">    <span class="keyword">if</span> (scrollTop + windowHeight == scrollHeight) &#123;</span><br><span class="line">        //获取条件参数</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/07/xiaoguo/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-yidong_web" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/16/yidong_web/" class="article-date">
+  	<time datetime="2016-03-16T02:49:37.227Z" itemprop="datePublished">2016-03-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/16/yidong_web/">移动web整理</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="手机端选择哪种Png"><a href="#手机端选择哪种Png" class="headerlink" title="手机端选择哪种Png"></a>手机端选择哪种Png</h2><p>png需要满足体积小和视觉效果良好，使用<code>Fireworks</code>导出的<code>[png8 alpha]</code>，在手机端的支持是比较好的~不仅文件小，节省流量，而且半透明效果良好</p>
 
       
     </div>
@@ -222,11 +279,11 @@
 
 
   
-    <article id="post-xiaoguo" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-my-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/15/xiaoguo/" class="article-date">
-  	<time datetime="2016-03-15T09:22:51.125Z" itemprop="datePublished">2016-03-15</time>
+      <a href="/2016/03/16/my-new-post/" class="article-date">
+  	<time datetime="2016-03-16T02:49:30.956Z" itemprop="datePublished">2016-03-16</time>
 </a>
     </div>
   
@@ -239,7 +296,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/xiaoguo/">常用效果</a>
+      <a class="article-title" href="/2016/03/16/my-new-post/">Hexo的搭建(hexo 3.0)</a>
     </h1>
   
 
@@ -248,7 +305,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="常用效果"><a href="#常用效果" class="headerlink" title=" 常用效果 "></a><strong> 常用效果 </strong></h1><h3 id="里面元素滚动到底外部容器不滚动"><a href="#里面元素滚动到底外部容器不滚动" class="headerlink" title=" 里面元素滚动到底外部容器不滚动 "></a><strong> 里面元素滚动到底外部容器不滚动 </strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">CSS:</span><br><span class="line">.test &#123;</span><br><span class="line">    width: <span class="number">210</span>px;</span><br><span class="line">    height: <span class="number">200</span>px;</span><br><span class="line">    overflow: auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">HTML代码：</span><br><span class="line">&lt;div id=<span class="string">"test"</span> class=<span class="string">"test"</span>&gt;</span><br><span class="line">    &lt;img src=<span class="string">"mm2.jpg"</span>&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">JS代码：</span><br><span class="line">$.fn.scrollUnique = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> $(this).each(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var eventType = <span class="string">'mousewheel'</span>;</span><br><span class="line">        <span class="keyword">if</span> (document.mozHidden !== undefined) &#123;</span><br><span class="line">            eventType = <span class="string">'DOMMouseScroll'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        $(this).on(eventType, <span class="keyword">function</span>(event) &#123;</span><br><span class="line">            // 一些数据</span><br><span class="line">            var scrollTop = this.scrollTop,</span><br><span class="line">                scrollHeight = this.scrollHeight,</span><br><span class="line">                height = this.clientHeight;</span><br><span class="line"></span><br><span class="line">            var delta = (event.originalEvent.wheelDelta) ? event.originalEvent.wheelDelta : -(event.originalEvent.detail || <span class="number">0</span>);        </span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> ((delta &gt; <span class="number">0</span> &amp;&amp; scrollTop &lt;= delta) || (delta &lt; <span class="number">0</span> &amp;&amp; scrollHeight - height - scrollTop &lt;= -<span class="number">1</span> * delta)) &#123;</span><br><span class="line">                // IE浏览器下滚动会跨越边界直接影响父级滚动，因此，临界时候手动边界滚动定位</span><br><span class="line">                this.scrollTop = delta &gt; <span class="number">0</span>? <span class="number">0</span>: scrollHeight;</span><br><span class="line">                // 向上滚 || 向下滚</span><br><span class="line">                event.preventDefault();</span><br><span class="line">            &#125;        </span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);	</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">$(<span class="string">'#test'</span>).scrollUnique();</span><br></pre></td></tr></table></figure>
+        <h3 id="初衷"><a href="#初衷" class="headerlink" title=" 初衷 "></a><strong> 初衷 </strong></h3><p>这几天，准备搭建一个自己的博客，看到hexo的强大搭建博客能力和容易上手，用hexo搭建了自己的博客，看到网上使用hexo搭建博客的教程很多，我自己也是跟着各位大神的教程搭建的博客，写这篇博客是为了记录下我在搭建的过程中遇到的问题和个人学习笔记。</p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title=" 安装Git "></a><strong> 安装Git </strong></h3><p>下载安装<a href="https://git-for-windows.github.io/">msysgit</a></p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title=" 安装Node.js "></a><strong> 安装Node.js </strong></h3><p>在 Windows 环境下安装 Node.js ，下载<a href="http://nodejs.cn/">Node.js</a>文件安装即可，如果后面使用命令安装hexo的时候，提示无效的命令，可以重启下机器。</p>
       
     </div>
     
@@ -259,7 +318,7 @@
 
       
         <p class="article-more-link">
-          <a  href="/2016/03/15/xiaoguo/#more">more >></a>
+          <a  href="/2016/03/16/my-new-post/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -281,8 +340,8 @@
     <article id="post-rem" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/15/rem/" class="article-date">
-  	<time datetime="2016-03-15T09:22:15.046Z" itemprop="datePublished">2016-03-15</time>
+      <a href="/2016/03/16/rem/" class="article-date">
+  	<time datetime="2016-03-16T02:49:24.539Z" itemprop="datePublished">2016-03-16</time>
 </a>
     </div>
   
@@ -295,7 +354,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/rem/">关于rem</a>
+      <a class="article-title" href="/2016/03/16/rem/">关于rem</a>
     </h1>
   
 
@@ -304,7 +363,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="关于rem"><a href="#关于rem" class="headerlink" title=" 关于rem "></a><strong> 关于rem </strong></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width:<span class="number">0</span>)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">53.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">320</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">53.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">340</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">56.66</span>%&#125;</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">360</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">60</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">380</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">63.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">400</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">66.66</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">420</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">70</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">440</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">73.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">460</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">76.66</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">480</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">80</span>%&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">@media screen and (min-width:<span class="number">0</span>)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">53.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">320</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">53.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">340</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">56.66</span>%&#125;</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">360</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">60</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">380</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">63.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">400</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">66.66</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">420</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">70</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">440</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">73.33</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">460</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">76.66</span>%&#125;	</span><br><span class="line">&#125;</span><br><span class="line">@media screen and (min-width:<span class="number">480</span>px)&#123;</span><br><span class="line">	html&#123;font-size:<span class="number">80</span>%&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -315,65 +374,7 @@
 
       
         <p class="article-more-link">
-          <a  href="/2016/03/15/rem/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-my-new-post" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/15/my-new-post/" class="article-date">
-  	<time datetime="2016-03-15T09:22:03.158Z" itemprop="datePublished">2016-03-15</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/my-new-post/">Hexo的搭建(hexo 3.0)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Hexo的搭建-hexo-3-0"><a href="#Hexo的搭建-hexo-3-0" class="headerlink" title=" Hexo的搭建(hexo 3.0) "></a><strong> Hexo的搭建(hexo 3.0) </strong></h1><h3 id="初衷"><a href="#初衷" class="headerlink" title=" 初衷 "></a><strong> 初衷 </strong></h3><p>这几天，准备搭建一个自己的博客，看到hexo的强大搭建博客能力和容易上手，用hexo搭建了自己的博客，看到网上使用hexo搭建博客的教程很多，我自己也是跟着各位大神的教程搭建的博客，写这篇博客是为了记录下我在搭建的过程中遇到的问题和个人学习笔记。</p>
-<h3 id="安装Git"><a href="#安装Git" class="headerlink" title=" 安装Git "></a><strong> 安装Git </strong></h3><p>下载安装<a href="https://git-for-windows.github.io/">msysgit</a></p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title=" 安装Node.js "></a><strong> 安装Node.js </strong></h3><p>在 Windows 环境下安装 Node.js ，下载<a href="http://nodejs.cn/">Node.js</a>文件安装即可，如果后面使用命令安装hexo的时候，提示无效的命令，可以重启下机器。</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/03/15/my-new-post/#more">more >></a>
+          <a  href="/2016/03/16/rem/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
