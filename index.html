@@ -169,6 +169,59 @@
 
       <div class="body-wrap">
   
+    <article id="post-popup" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/19/popup/" class="article-date">
+  	<time datetime="2016-09-19T08:30:36.561Z" itemprop="datePublished">2016-09-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/19/popup/">弹窗</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="弹窗提示-确认和取消"><a href="#弹窗提示-确认和取消" class="headerlink" title=" 弹窗提示 确认和取消"></a><strong> 弹窗提示 确认和取消</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line">&lt;code&gt;CSS代码：&lt;/code&gt;</span><br><span class="line"></span><br><span class="line">.com_two_popup&#123;</span><br><span class="line">	width: <span class="number">30</span>rem;</span><br><span class="line">	position: fixed;</span><br><span class="line">	top: <span class="number">50</span>%;</span><br><span class="line">	left: <span class="number">50</span>%;</span><br><span class="line">	margin-left: -<span class="number">15</span>rem;</span><br><span class="line">	margin-top: -<span class="number">15</span>rem;</span><br><span class="line">	background: <span class="comment">#FFFFFF;</span></span><br><span class="line">	border-radius: <span class="number">2</span>px;</span><br><span class="line">	z-index: <span class="number">101</span>;</span><br><span class="line">	display: none;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_box&#123;</span><br><span class="line">	padding: <span class="number">0</span> <span class="number">25</span>px;</span><br><span class="line">	height: <span class="number">90</span>px;</span><br><span class="line">	font-size: <span class="number">1.5</span>rem;</span><br><span class="line">	color: <span class="comment">#333333;</span></span><br><span class="line">	text-align: center;</span><br><span class="line">	position: relative;</span><br><span class="line">	display:-webkit-box;  </span><br><span class="line">	-webkit-box-pack:center;  </span><br><span class="line">	-webkit-box-align:center;  </span><br><span class="line">	display:box;  </span><br><span class="line">	box-pack:center;  </span><br><span class="line">	box-align:center;  </span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_box span&#123;</span><br><span class="line">	display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn&#123;</span><br><span class="line">	border-top: <span class="number">1</span>px solid <span class="comment">#e5e5e5;</span></span><br><span class="line">	height: <span class="number">50</span>px;</span><br><span class="line">	font-size: <span class="number">1.5</span>rem;</span><br><span class="line">	display: box;</span><br><span class="line">	display: -webkit-box;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a&#123;</span><br><span class="line">	display: block;</span><br><span class="line">	-webkit-box-flex: <span class="number">1</span>;</span><br><span class="line">	height: <span class="number">50</span>px;</span><br><span class="line">	line-height: <span class="number">50</span>px;</span><br><span class="line">	text-align: center;</span><br><span class="line">	border-right: <span class="number">1</span>px solid <span class="comment">#e5e5e5;</span></span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a:nth-child(<span class="number">1</span>)&#123;</span><br><span class="line">	color: <span class="comment">#333333;</span></span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a:nth-child(<span class="number">2</span>)&#123;</span><br><span class="line">	color: <span class="comment">#F77304;</span></span><br><span class="line">	border-right: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">### ** 弹窗提示 确认和取消**</span></span><br><span class="line">``` bash</span><br><span class="line">&lt;code&gt;CSS代码：&lt;/code&gt;</span><br><span class="line"></span><br><span class="line">.com_two_popup&#123;</span><br><span class="line">	width: <span class="number">30</span>rem;</span><br><span class="line">	position: fixed;</span><br><span class="line">	top: <span class="number">50</span>%;</span><br><span class="line">	left: <span class="number">50</span>%;</span><br><span class="line">	margin-left: -<span class="number">15</span>rem;</span><br><span class="line">	margin-top: -<span class="number">15</span>rem;</span><br><span class="line">	background: <span class="comment">#FFFFFF;</span></span><br><span class="line">	border-radius: <span class="number">2</span>px;</span><br><span class="line">	z-index: <span class="number">101</span>;</span><br><span class="line">	display: none;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_box&#123;</span><br><span class="line">	padding: <span class="number">0</span> <span class="number">25</span>px;</span><br><span class="line">	height: <span class="number">90</span>px;</span><br><span class="line">	font-size: <span class="number">1.5</span>rem;</span><br><span class="line">	color: <span class="comment">#333333;</span></span><br><span class="line">	text-align: center;</span><br><span class="line">	position: relative;</span><br><span class="line">	display:-webkit-box;  </span><br><span class="line">	-webkit-box-pack:center;  </span><br><span class="line">	-webkit-box-align:center;  </span><br><span class="line">	display:box;  </span><br><span class="line">	box-pack:center;  </span><br><span class="line">	box-align:center;  </span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_box span&#123;</span><br><span class="line">	display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn&#123;</span><br><span class="line">	border-top: <span class="number">1</span>px solid <span class="comment">#e5e5e5;</span></span><br><span class="line">	height: <span class="number">50</span>px;</span><br><span class="line">	font-size: <span class="number">1.5</span>rem;</span><br><span class="line">	display: box;</span><br><span class="line">	display: -webkit-box;</span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a&#123;</span><br><span class="line">	display: block;</span><br><span class="line">	-webkit-box-flex: <span class="number">1</span>;</span><br><span class="line">	height: <span class="number">50</span>px;</span><br><span class="line">	line-height: <span class="number">50</span>px;</span><br><span class="line">	text-align: center;</span><br><span class="line">	border-right: <span class="number">1</span>px solid <span class="comment">#e5e5e5;</span></span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a:nth-child(<span class="number">1</span>)&#123;</span><br><span class="line">	color: <span class="comment">#333333;</span></span><br><span class="line">&#125;</span><br><span class="line">.com_two_popup_btn a:nth-child(<span class="number">2</span>)&#123;</span><br><span class="line">	color: <span class="comment">#F77304;</span></span><br><span class="line">	border-right: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-rem" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
